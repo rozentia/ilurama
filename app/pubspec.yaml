@@ -1,0 +1,148 @@
+name: ilurama
+description: Reference tool for lighting designers and fotographers
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0-255.2.beta <3.0.0'
+
+dependencies:
+  adaptive_action_sheet: ^2.0.2
+  animated_toggle_switch: ^0.5.2
+  another_xlider: ^1.1.2
+  auto_route: ^5.0.2
+  auto_size_text: ^3.0.0
+  blur: ^3.1.0
+  cloud_firestore: ^4.0.2
+  copy_with_extension: ^4.0.3
+  crypto: ^3.0.2
+  cupertino_icons: ^1.0.4
+  dartz: ^0.10.1
+  easy_localization: ^3.0.1
+  easy_localization_loader: ^1.0.0
+  email_validator: ^2.1.17
+  equatable: ^2.0.5
+  firebase_analytics: ^10.0.2
+  firebase_auth: ^4.0.2
+  firebase_core: ^2.1.0
+  firebase_crashlytics: ^3.0.3
+  firebase_dynamic_links: ^5.0.2
+  firebase_storage: ^11.0.2
+  fl_chart: ^0.55.1
+  flamingo:
+    path: ../../../Packages/Flutter/forks/flamingo/flamingo
+  flamingo_annotation: ^0.5.0
+  flutter:
+    sdk: flutter
+  flutter_colorpicker: ^1.0.3
+  flutter_localizations:
+    sdk: flutter
+  flutter_markdown: ^0.6.12
+  flutter_secure_storage: ^6.0.0
+  flutter_slidable: ^2.0.0
+  flutter_svg: ^1.0.3
+  freezed_annotation: ^2.1.0
+  get_it: ^7.2.0
+  ilurama_theme:
+    path: ../packages/ilurama_theme
+  google_sign_in: ^5.4.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  injectable: ^1.5.3
+  is_first_run: ^1.0.0
+  json_annotation: ^4.5.0
+  json_serializable: ^6.2.0
+  line_icons: ^2.0.1
+  logging: ^1.0.2
+  modal_bottom_sheet: ^2.1.2
+  page_view_indicators: ^2.0.0
+  path: ^1.8.1
+  quiver: ^3.1.0
+  shared_extensions:
+    path: ../../../Packages/Flutter/packages/shared_extensions
+  shared_preferences: ^2.0.13
+  sign_in_with_apple: ^4.1.0
+  stacked: ^3.0.0
+  stacked_services: ^0.9.5
+  star_menu: ^3.0.0+2
+  tinycolor2: ^3.0.1
+  url_launcher: ^6.1.6
+  wiredash: ^1.5.0
+
+dev_dependencies:
+  auto_route_generator: ^5.0.3
+  build_runner: ^2.1.10
+  copy_with_extension_gen: ^4.0.2
+  flamingo_generator:
+    path: ../../../Packages/Flutter/forks/flamingo/flamingo_generator
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.0.3
+  hive_generator: ^2.0.0
+  injectable_generator: ^1.5.3
+
+dependency_overrides:
+  analyzer: ">=4.2.0 <5.0.0"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/docs/
+    - assets/data/
+    - assets/images/
+    - assets/images/product_images/
+    - assets/images/app_images/
+    # - generate translation loader
+    # use command: flutter pub run easy_localization:generate -S assets/translations -O lib/app/locale
+    - assets/translations/
+
+#- generate barrel files for major folders
+# activate if not present: flutter pub global activate index_generator
+# use command: flutter pub global run index_generator
+index_generator:
+  exclude:
+    # generated files
+    - "**.g.dart"
+    # flamingo generated files
+    - "**.flamingo.dart"
+    # freezed files
+    - "**.freezed.dart"
+    # viewmodel files
+    - "**.vm.dart"
+    # others
+    - "{_,**/_}*.dart"
+  indexes:
+    #- APP
+    - path: lib/app/constants
+    - path: lib/app/database
+    - path: lib/app/core
+    - path: lib/app/extensions
+    - path: lib/app/helpers
+    - path: lib/app/locale
+    - path: lib/app/locator
+    - path: lib/app/routes
+    #- MODELS
+    - path: lib/models
+    #- SERVICES
+    - path: lib/services/ads
+    - path: lib/services/auth
+    - path: lib/services/config
+    - path: lib/services/content
+    - path: lib/services/library
+    - path: lib/services/user
+    - path: lib/services/analytics
+    #- ENTITIES
+    - path: lib/entities/color_item
+    - path: lib/entities/content_types
+    - path: lib/entities/filter_settings
+    - path: lib/entities/extensions
+    #- WIDGETS
+    - path: lib/ui/widgets
+    - path: lib/ui/components
+    - path: lib/ui/views
+    - path: lib/ui/helpers

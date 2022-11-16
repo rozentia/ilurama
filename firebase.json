@@ -1,0 +1,83 @@
+{
+  "firestore": {
+    "rules": "backend/rules/firestore.rules",
+    "indexes": "backend/rules/firestore.indexes.json"
+  },
+ "storage": {
+    "rules": "backend/rules/storage.rules"
+  },
+  "functions": [
+    {
+      "source": "backend/functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
+  "hosting": [
+    {
+      "target": "main",
+      "appAssociation": "AUTO",
+      "public": "web/@elegantstack/site/public",
+      "rewrites": [
+        {
+          "source": "/links/**",
+          "dynamicLinks": true
+
+        }
+      ]
+    },
+    {
+      "target": "api",
+      "rewrites": [
+        {
+          "source": "/verifyemail",
+          "function": "auth-verifyemail",
+          "region": "europe-west3"
+        }
+      ]
+    },
+    {
+      "target": "webapp",
+      "public": "app/build/web"
+    }
+  ],
+  "remoteconfig": {
+    "template": "backend/remoteconfig/remoteconfig.template.json"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "pubsub": {
+      "port": 8085
+    },
+    "storage": {
+      "port": 9199
+    },
+    "eventarc": {
+      "port": 9299
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

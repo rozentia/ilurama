@@ -1,0 +1,67 @@
+{
+    "images": [
+        {
+          "src": "../../../../assets/ilurama/app/feature-wide.png",
+          "alt": "alt text",
+          "effects": ["fadeInDown"]
+        }
+      ],
+      "text": [
+        {
+          "text": "Roadmap",
+          "color": "omegaLight",
+          "variant": "h2"
+        },
+        {
+          "text": "Lighting design as an artistic mean of expression is bound to never stop evolving... Ilurama has a tons of features waiting to be unleashed to stay in sync with this neverending evolution:",
+          "variant": "regular"
+        }
+      ],
+      "collection": [
+        {
+          "text": [
+            {   
+              "text": "Scenes",
+              "color": "omega",
+              "variant": "h5"
+            },
+            {
+              "text": "Take a picture or video and link it to filters, collections or color codes."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Gobos",
+              "color": "omega",
+              "variant": "h5"
+            },
+            {
+              "text": "Include all gobos of major industry manufacturers in our main library."
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": "Gear",
+              "color": "omega",
+              "variant": "h5"
+            },
+            {
+              "text": "Define the fixtures, devices or any lighting gear that best suits your collections."
+            }
+          ]
+        },
+        {
+            "text": [
+              {
+                "text": "And more to come...",
+                "color": "omega",
+                "variant": "h5"
+              }
+            ]
+          }
+      ]
+}

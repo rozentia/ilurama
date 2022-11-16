@@ -1,0 +1,73 @@
+name: ilurama_theme
+description: Theme for Ilurama Mobile and Web App
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.4
+  dartz: ^0.10.1
+  flutter:
+    sdk: flutter
+  flutter_neumorphic: ^3.2.0
+  flutter_slidable: ^2.0.0
+  grouped_list: ^5.1.2
+  pull_to_refresh_notification: ^2.0.1
+  shared_extensions:
+    path: ../../../../Packages/Flutter/packages/shared_extensions
+  tinycolor2: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.5.3
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/graphics/
+    - assets/images/bg/
+
+  fonts:
+    - family: LSFProDisplay
+      fonts:
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Black.otf
+          weight: 900
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Heavy.otf
+          weight: 800
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Bold.otf
+          weight: 700
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Medium.otf
+          weight: 500
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Regular.otf
+          weight: 400
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Light.otf
+          weight: 300
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Thin.otf
+          weight: 200
+        - asset: assets/fonts/sf_pro/LSF-Pro-Display-Ultralight.otf
+          weight: 100
+    - family: LSFProText
+      fonts:
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Black.otf
+          weight: 900
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Heavy.otf
+          weight: 800
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Bold.otf
+          weight: 700
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Medium.otf
+          weight: 500
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Regular.otf
+          weight: 400
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Light.otf
+          weight: 300
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Thin.otf
+          weight: 200
+        - asset: assets/fonts/sf_pro/LSF-Pro-Text-Ultralight.otf
+          weight: 100

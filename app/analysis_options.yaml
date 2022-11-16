@@ -1,0 +1,10 @@
+include: package:flutter_lints/flutter.yaml
+analyzer:
+  exclude:
+    - "**.g.dart"
+    - "**.mocks.dart"
+    - "**.config.dart"
+    - "**.flamingo.dart"
+linter:
+  rules:
+    prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule

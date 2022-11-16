@@ -1,0 +1,61 @@
+{
+  "text": [
+    {
+      "text": "LED Color Codes",
+      "color": "omegaDark",
+      "variant": "h4"
+    },
+    {
+      "text": "Create your **LED Colors** with their codes",
+      "variant": "h2"
+    },
+    {
+      "text": "Store the DMX or percentage values of the parameters of the LED colors you never want to forget",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../../assets/ilurama/app/feature-three.png",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "Create",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Create a new color code and name it as you like"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Set Values",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Define the parameters and the values that makes up this color"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Organize or Share",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Add it to a collection or send it to your colleages"
+        }
+      ]
+    }
+  ]
+}

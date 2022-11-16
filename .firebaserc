@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "ilurama",
+    "staging": "ilurama-dev"
+  },
+  "targets": {
+    "ilurama": {
+      "hosting": {
+        "main": [
+          "ilurama"
+        ],
+        "api": [
+          "ilurama-api"
+        ],
+        "webapp": [
+          "ilurama-webapp"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

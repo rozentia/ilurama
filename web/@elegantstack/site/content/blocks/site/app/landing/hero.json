@@ -1,0 +1,40 @@
+{
+  "text": [
+    {
+      "text": "Lighting is Poetry",
+      "color": "beta",
+      "variant": "h3"
+    },
+    {
+      "text": "Introducing Ilurama App",
+      "color": "omegaLighter",
+      "variant": "h1"
+    },
+    {
+      "text": "The ultimate reference tool to enhance the language of your lighting designs",
+      "color": "white",
+      "variant": "h4"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../../assets/ilurama/app/hero-wide.png",
+      "alt": "alt text",
+      "effects": ["fadeInDown"]
+    }   
+  ],
+  "buttons": [
+    {
+      "text": "Get it on Google Play",
+      "type": "APP",
+      "link": "",
+      "variant": "google"
+    },
+    {
+      "text": "Download on the App Store",
+      "type": "APP",
+      "link": "",
+      "variant": "apple"
+    }
+  ]
+}

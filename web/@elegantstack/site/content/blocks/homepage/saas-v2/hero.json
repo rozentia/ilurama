@@ -1,0 +1,37 @@
+{
+  "text": [
+    {
+      "text": "Advanced Platform",
+      "color": "omegaDarker",
+      "variant": "h4"
+    },
+    {
+      "text": "Take your team collaboration to the next level",
+      "color": "white",
+      "variant": "h1"
+    },
+    {
+      "text": "Hassle-free platform and specialists to help you with your marketing campaigns.",
+      "color": "omegaDarker",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../assets/flexiblocks/homepage/saas-v2/hero-small.png",
+      "alt": "alt text",
+      "radius": "lg",
+      "shadow": "default",
+      "border": "lg",
+      "effects": ["fadeInDown"]
+    }
+  ],
+  "buttons": [
+    {
+      "text": "Get Started Now",
+      "type": "MODAL",
+      "link": "authentication",
+      "variant": "white"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "text": [
+    {
+      "text": "Find the exact match",
+      "color": "beta",
+      "variant": "h4"
+    },
+    {
+      "text": "See How It Works",
+      "color": "omegaLight",
+      "variant": "h2"
+    },
+    {
+      "text": "Ilurama App provides several ways to navigate the vast library of lighting filters.",
+      "color": "omega",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../../assets/ilurama/app/how-it-works.png",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "Search by text",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "Just type something in the search bar and it will start searching the text in the entire record for a match"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Filter by Hue",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "Simply select a hue and it will only show those colors that are in the range of your choosing"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Choose the Brand",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "Select the brand you want the filters to be applied to, or simply filter them all for a specific brand"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Filter by Type",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "Select one or many among several types of filters to limit the result to show only those you want"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Automatic Relatives",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "Once inside a filter you will see there are a set of related colors like analogous, complementary and more"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Brand Alternatives",
+          "color": "alpha",
+          "variant": "h5"
+        },
+        {
+          "text": "All the recommended alternatives from each brand will be shown inside the filter details"
+        }
+      ]
+    }
+  ]
+}

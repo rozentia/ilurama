@@ -1,0 +1,109 @@
+
+    .alpha { color: "#f97316" }
+    .alphaDark { color: "#ea580c" }
+    .alphaDarker { color: "#9a3412" }
+    .alphaLight { color: "#fdba74" }
+    .alphaLighter { color: "#ffedd5" }
+
+    .beta { color: "#f43f5e" }
+    .betaDark { color: "#e11d48" }
+    .betaDarker { color: "#9f1239" }
+    .betaLight { color: "#fda4af" }
+    .betaLighter { color: "#ffe4e6" }
+
+    .omegaLighter {color: "#edf2f7" }
+    .omegaLight {color: "#e2e8f0" }
+    .omega {color: "#a0aec0" }
+    .omegaDark {color: "#718096" }
+    .omegaDarker {color: "#2d3748" }
+
+    .article { color: "#4a5568" }
+    .background { color: "#f8f8f8" }    
+    .contentBg { color: "#fff" }
+    .error { color: "#ef4444" }
+    .errorLight { color: "#fee2e2" }
+    .footerBg { color: "#fff" }
+    .headerActiveBg { color: "#fff" }
+    .headerActive Color { color: "#2d3748" }
+    .headerBg { color: "transparent" }
+    .heading { color: "#2d3748" }
+    .highlight { color: "#edf2f7" }
+
+    /* modes */
+
+    .blueBlack .alpha {color: "#4a5568"}
+    .blueBlack .alphaDark {color: "#2d3748"}
+    .blueBlack .alphaDarker {color: "#1a202c"}
+    .blueBlack .alphaLight {color: "#e2e8f0"}
+    .blueBlack .alphaLighter {color: "#edf2f7"}
+    .blueBlack .beta {color: "#38bdf8"}
+    .blueBlack .betaDark {color: "#0284c7"}
+    .blueBlack .betaDarker {color: "#075985"}
+    .blueBlack .betaLight {color: "#7dd3fc"}
+    .blueBlack .betaLighter {color: "#e0f2fe"}
+
+    .greenBlue .alpha {color: "#3b82f6"}
+    .greenBlue .alphaDark {color: "#2563eb"}
+    .greenBlue .alphaDarker {color: "#1e40af"}
+    .greenBlue .alphaLight {color: "#93c5fd"}
+    .greenBlue .alphaLighter {color: "#dbeafe"}
+    .greenBlue .beta {color: "#84cc16"}
+    .greenBlue .betaDark {color: "#4d7c0f"}
+    .greenBlue .betaDarker {color: "#3f6212"}
+    .greenBlue .betaLight {color: "#bef264"}
+    .greenBlue .betaLighter {color: "#ecfccb"}
+
+    .greenViolet .alpha {color: "#8b5cf6"}
+    .greenViolet .alphaDark {color: "#7c3aed"}
+    .greenViolet .alphaDarker {color: "#5b21b6"}
+    .greenViolet .alphaLight {color: "#c4b5fd"}
+    .greenViolet .alphaLighter {color: "#ede9fe"}
+    .greenViolet .beta {color: "#22c55e"}
+    .greenViolet .betaDark {color: "#16a34a"}
+    .greenViolet .betaDarker {color: "#166534"}
+    .greenViolet .betaLight {color: "#86efac"}
+    .greenViolet .betaLighter {color: "#dcfce7"}
+
+    .orangeBlue .alpha {color: "#3b82f6"}
+    .orangeBlue .alphaDark {color: "#2563eb"}
+    .orangeBlue .alphaDarker {color: "#1e40af"}
+    .orangeBlue .alphaLight {color: "#93c5fd"}
+    .orangeBlue .alphaLighter {color: "#dbeafe"}
+    .orangeBlue .beta {color: "#f97316"}
+    .orangeBlue .betaDark {color: "#ea580c"}
+    .orangeBlue .betaDarker {color: "#9a3412"}
+    .orangeBlue .betaLight {color: "#fdba74"}
+    .orangeBlue .betaLighter {color: "#ffedd5"}
+
+    .orangeRose .alpha {color: "#f97316"}
+    .orangeRose .alphaDark {color: "#ea580c"}
+    .orangeRose .alphaDarker {color: "#9a3412"}
+    .orangeRose .alphaLight {color: "#fdba74"}
+    .orangeRose .alphaLighter {color: "#ffedd5"}
+    .orangeRose .beta {color: "#f43f5e"}
+    .orangeRose .betaDark {color: "#e11d48"}
+    .orangeRose .betaDarker {color: "#9f1239"}
+    .orangeRose .betaLight {color: "#fda4af"}
+    .orangeRose .betaLighter {color: "#ffe4e6"}
+
+    .purpleIndigo .alphac {color: "#6366f1"}
+    .purpleIndigo .alphaDarkc {color: "#4f46e5"}
+    .purpleIndigo .alphaDarkerc {color: "#3730a3"}
+    .purpleIndigo .alphaLightc {color: "#a5b4fc"}
+    .purpleIndigo .alphaLighterc {color: "#e0e7ff"}
+    .purpleIndigo .betac {color: "#a855f7"}
+    .purpleIndigo .betaDarkc {color: "#9333ea"}
+    .purpleIndigo .betaDarkerc {color: "#6b21a8"}
+    .purpleIndigo .betaLightc {color: "#d8b4fe"}
+    .purpleIndigo .betaLighterc {color: "#f3e8ff"}
+
+    .redBlue .alpha {color: "#3b82f6"}
+    .redBlue .alphaDark {color: "#2563eb"}
+    .redBlue .alphaDarker {color: "#1e40af"}
+    .redBlue .alphaLight {color: "#93c5fd"}
+    .redBlue .alphaLighter {color: "#dbeafe"}
+    .redBlue .beta {color: "#dc2626"}
+    .redBlue .betaDark {color: "#b91c1c"}
+    .redBlue .betaDarker {color: "#991b1b"}
+    .redBlue .betaLight {color: "#fca5a5"}
+    .redBlue .betaLighter {color: "#fee2e2"}

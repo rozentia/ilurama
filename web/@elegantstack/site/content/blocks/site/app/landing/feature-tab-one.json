@@ -1,0 +1,67 @@
+{
+  "text": [
+    {
+      "text": "Filter Comparison",
+      "color": "omegaDark",
+      "variant": "h4"
+    },
+    {
+      "text": "**Compare** filters together side by side",
+      "variant": "h2"
+    },
+    {
+      "text": "Start comparing a source filter either from its detail view or from the list, select a target filter to view all their info side by side",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../../assets/ilurama/app/feature-one.png",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "text": [
+        {
+          "text": "Color",
+          "color": "#2DC88A",
+          "variant": "h2",
+          "space": 1
+        },
+        {
+          "text": "Their color representation",
+          "variant": "h6"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Graph",
+          "color": "alpha",
+          "variant": "h2",
+          "space": 1
+        },
+        {
+          "text": "Their transmission in graph stops",
+          "variant": "h6"
+        }
+      ]
+    },
+    {
+      "text": [
+        {
+          "text": "Data",
+          "color": "beta",
+          "variant": "h2",
+          "space": 1
+        },
+        {
+          "text": "Transmission and color coding values",
+          "variant": "h6"
+        }
+      ]
+    }
+  ]
+}

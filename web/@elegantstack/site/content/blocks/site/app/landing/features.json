@@ -1,0 +1,84 @@
+{
+  "text": [
+    {
+      "text": "Every **lighting filter** always in your pocket",
+      "variant": "h2"
+    },
+    {
+      "text": "A comprehensive library of lighting filters with many ways to reach the one you are looking for.",
+      "variant": "medium"
+    },
+    {
+      "text": " . ",
+      "color": "transparent",
+      "variant": "medium"
+    },
+    {
+      "text": " . ",
+      "color": "transparent",
+      "variant": "medium"
+    }
+  ],
+  "collection": [
+    {
+      "container": {
+        "variant": "cards.paper"
+      },
+      "text": [
+        {
+          "text": "Exahustive",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Wether you need to find a color, a diffuser or a code for an LED fixture, we got you covered."
+        }
+      ],
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-planet.svg",
+        "bg": "#FFF3CC",
+        "color": "#FF9D01"
+      }
+    },
+    {
+      "container": {
+        "variant": "cards.paper"
+      },
+      "text": [
+        {
+          "text": "Customizable",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Extend a filter with your own data, your preferred alternatives, your recommendations, and much more."
+        }
+      ],
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-coin.svg",
+        "bg": "#FEE8D1",
+        "color": "#F7491D"
+      }
+    },
+    {
+      "container": {
+        "variant": "cards.paper"
+      },
+      "text": [
+        {
+          "text": "Shareable",
+          "color": "omegaDarker",
+          "variant": "h5"
+        },
+        {
+          "text": "Send one or many filter references to your colleages, or simply share a collection with them."
+        }
+      ],
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-box.svg",
+        "bg": "#D5FCDD",
+        "color": "#2DC88A"
+      }
+    }
+  ]
+}

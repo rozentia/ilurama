@@ -1,0 +1,61 @@
+{
+  "text": [
+    {
+      "text": "Collections",
+      "color": "omegaDark",
+      "variant": "h4"
+    },
+    {
+      "text": "**Unlimited collections** to store and organize your filters",
+      "variant": "h2"
+    },
+    {
+      "text": "Create a collection to store filters and color codes in a meaningful way. Set a description that best defines the meaning of this collection. Never forget that combination again",
+      "variant": "medium"
+    }
+  ],
+  "images": [
+    {
+      "src": "../../../../assets/ilurama/app/feature-two.png",
+      "alt": "alt text"
+    }
+  ],
+  "collection": [
+    {
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-check-circle.svg",
+        "color": "beta"
+      },
+      "text": [
+        {
+          "text": "Include filters of any type",
+          "variant": "h5"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-check-circle.svg",
+        "color": "beta"
+      },
+      "text": [
+        {
+          "text": "Add your LED color codes",
+          "variant": "h5"
+        }
+      ]
+    },
+    {
+      "icon": {
+        "src": "../../../../assets/flexiblocks/icons/bx-check-circle.svg",
+        "color": "beta"
+      },
+      "text": [
+        {
+          "text": "Search, find and share your collection",
+          "variant": "h5"
+        }
+      ]
+    }
+  ]
+}

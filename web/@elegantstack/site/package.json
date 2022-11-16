@@ -1,0 +1,31 @@
+{
+	"name": "ilurama-website",
+	"private": true,
+	"version": "3.10.0",
+	"scripts": {
+		"develop": "gatsby develop",
+		"debug": "node --nolazy node_modules/.bin/gatsby develop --inspect-brk",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"clean": "gatsby clean",
+		"deploy": "firebase deploy --only hosting:main -P default",
+		"preview": "firebase hosting:channel:deploy main-preview --only main -P default"
+	},
+	"dependencies": {
+		"@elegantstack/gatsby-theme-flexiblocks": "*",
+		"@elegantstack/gatsby-theme-flexiblog-news": "*",
+		"dotenv": "^16.0.3",
+		"firebase": "^9.13.0",
+		"gatsby": "^4.14.1",
+		"gatsby-image": "^3.11.0",
+		"gatsby-plugin-google-tagmanager": "^4.24.0",
+		"gatsby-plugin-image": "^2.24.0",
+		"gatsby-plugin-sharp": "^4.24.0",
+		"gatsby-transformer-sharp": "^4.24.0",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.6.2"
+	}
+}
