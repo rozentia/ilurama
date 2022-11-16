@@ -49,7 +49,7 @@ app.*.map.json
 firebase_options.dart
 
 # Firebase Debug Project Options and Credentials
-firebase_debug_credentials.dart
+firebase_options_dev.dart
 
 # Wiredash secrets (projectId & key)
 wiredash_env.dart
