@@ -1,12 +1,12 @@
 name: ilurama
 description: Reference tool for lighting designers and fotographers
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.0-255.2.beta <3.0.0'
+  sdk: ">=2.19.0-255.2.beta <3.0.0"
 
 dependencies:
   adaptive_action_sheet: ^2.0.2
@@ -16,15 +16,18 @@ dependencies:
   auto_size_text: ^3.0.0
   blur: ^3.1.0
   cloud_firestore: ^4.0.2
+  cloud_functions: ^4.0.5
   copy_with_extension: ^4.0.3
   crypto: ^3.0.2
   cupertino_icons: ^1.0.4
+  dart_jsonwebtoken: ^2.5.0
   dartz: ^0.10.1
   easy_localization: ^3.0.1
   easy_localization_loader: ^1.0.0
   email_validator: ^2.1.17
   equatable: ^2.0.5
   firebase_analytics: ^10.0.2
+  firebase_app_check: ^0.1.1+5
   firebase_auth: ^4.0.2
   firebase_core: ^2.1.0
   firebase_crashlytics: ^3.0.3
@@ -45,11 +48,11 @@ dependencies:
   flutter_svg: ^1.0.3
   freezed_annotation: ^2.1.0
   get_it: ^7.2.0
-  ilurama_theme:
-    path: ../packages/ilurama_theme
   google_sign_in: ^5.4.1
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  ilurama_theme:
+    path: ../packages/ilurama_theme
   injectable: ^1.5.3
   is_first_run: ^1.0.0
   json_annotation: ^4.5.0
@@ -86,6 +89,7 @@ dev_dependencies:
 
 dependency_overrides:
   analyzer: ">=4.2.0 <5.0.0"
+  collection: ^1.17.0
 
 flutter:
   uses-material-design: true

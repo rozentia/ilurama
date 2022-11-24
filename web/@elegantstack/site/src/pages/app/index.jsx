@@ -38,12 +38,10 @@ const IndexPage = props => {
         <Seo title='App' />
         
         {/* Modals */}
-        <ModalWithTabs content={content['authentication']} reverse />
+        
         <ModalWithTabs content={content['contact']} />
-        {/* <ModalSimple content={content['advertisement']} /> */}
         
         {/* Blocks */}
-        {/* <Header content={content['header-landing']} /> */}
         
         <Container sx={styles.heroContainer}>
             <Divider space='5' />

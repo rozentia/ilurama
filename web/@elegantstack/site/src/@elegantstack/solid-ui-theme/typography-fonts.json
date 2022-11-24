@@ -1,0 +1,16 @@
+{
+    "fonts": {
+      "google": {
+        "families": ["Poppins:400,600,700"]
+      },
+      "custom": {
+        "families": ["thriftregular, thriftitalic"],
+        "urls": ["/fonts/fonts.css"]
+      }
+    },
+    "theme": {
+      "headerFontFamily": ["Poppins", "sans-serif"],
+      "bodyFontFamily": ["Poppins", "sans-serif"]
+    }
+  }
+  

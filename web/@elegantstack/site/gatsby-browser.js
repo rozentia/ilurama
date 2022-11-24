@@ -3,7 +3,7 @@ import 'firebase/auth'
 import 'firebase/firestore'
 import 'firebase/functions'
 
-import AuthProvider from './src/components/Firebase/AuthProvider';
+import AuthProvider from './src/components/Firebase/AuthProvider'
 
 export const wrapRootElement = ({ element }) => (
     <AuthProvider >

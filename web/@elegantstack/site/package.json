@@ -14,16 +14,25 @@
 	"dependencies": {
 		"@elegantstack/gatsby-theme-flexiblocks": "*",
 		"@elegantstack/gatsby-theme-flexiblog-news": "*",
+		"@reach/router": "^1.3.4",
+		"axios": "^1.2.0",
 		"dotenv": "^16.0.3",
 		"firebase": "^9.13.0",
 		"gatsby": "^4.14.1",
 		"gatsby-image": "^3.11.0",
+		"gatsby-plugin-gdpr-cookies": "^2.0.9",
 		"gatsby-plugin-google-tagmanager": "^4.24.0",
 		"gatsby-plugin-image": "^2.24.0",
 		"gatsby-plugin-sharp": "^4.24.0",
+		"gatsby-plugin-use-query-params": "^1.0.1",
+		"gatsby-plugin-web-font-loader": "^1.0.4",
 		"gatsby-transformer-sharp": "^4.24.0",
+		"query-string": "^7.1.1",
 		"react": "^18.1.0",
-		"react-dom": "^18.1.0"
+		"react-cookie-consent": "^8.0.1",
+		"react-dom": "^18.1.0",
+		"react-router-dom": "^6.4.3",
+		"use-query-params": "^2.1.2"
 	},
 	"devDependencies": {
 		"prettier": "^2.6.2"

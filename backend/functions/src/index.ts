@@ -1,14 +1,7 @@
-import * as functions from "firebase-functions";
-import * as auth from "./auth";
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-const helloWorld = functions
-    .region("europe-west3")
-    .https
-    .onRequest((request, response) => {
-      functions.logger.info("Hello logs!", {structuredData: true});
-      response.send("Hello from Firebase!");
-    });
+import * as app from './app'
+import * as api from './api'
 
-export {helloWorld, auth};
+export {
+    app,
+    api,
+}

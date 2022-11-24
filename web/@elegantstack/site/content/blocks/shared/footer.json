@@ -9,26 +9,38 @@
     {
       "text": [
         {
-          "text": "Quick Links"
+          "text": "Links"
         }
       ],
       "buttons": [
         {
           "text": "Home",
-          "type": "ANCHOR",
-          "link": "#hero",
+          "type": "PAGE",
+          "link": "/",
+          "variant": "links.nav-light"
+        },
+        {
+          "text": "About",
+          "type": "PAGE",
+          "link": "/about",
           "variant": "links.nav-light"
         },
         {
           "text": "Blog",
-          "type": "MODAL",
+          "type": "PAGE",
           "link": "advertisement",
           "variant": "links.nav-light"
         },
         {
-          "text": "Contact Us",
-          "type": "MODAL",
-          "link": "contact",
+          "text": "App",
+          "type": "PAGE",
+          "link": "/app",
+          "variant": "links.nav-light"
+        },
+        {
+          "text": "Support",
+          "type": "PAGE",
+          "link": "/app/support",
           "variant": "links.nav-light"
         }
       ]
@@ -36,26 +48,26 @@
     {
       "text": [
         {
-          "text": "Legal Stuff"
+          "text": "Legal"
         }
       ],
       "buttons": [
         {
           "text": "Privacy Notice",
           "type": "PAGE",
-          "link": "",
+          "link": "/legal/privacy",
           "variant": "links.nav-light"
         },
         {
           "text": "Cookie Policy",
           "type": "PAGE",
-          "link": "",
+          "link": "/legal/cookies",
           "variant": "links.nav-light"
         },
         {
           "text": "Terms Of Use",
           "type": "PAGE",
-          "link": "",
+          "link": "/legal/terms",
           "variant": "links.nav-light"
         }
       ]
@@ -63,7 +75,7 @@
     {
       "text": [
         {
-          "text": "Social Media"
+          "text": "Social"
         }
       ],
       "buttons": [
@@ -78,12 +90,12 @@
           }
         },
         {
-          "text": "Twitter",
+          "text": "Facebook",
           "type": "PAGE",
-          "link": "https://twitter.com/gatsby",
+          "link": "https://facebook.com/gatsby",
           "variant": "links.nav-light",
           "icon": {
-            "src": "../../assets/flexiblocks/icons/bxl-twitter.svg",
+            "src": "../../assets/flexiblocks/icons/bxl-facebook.svg",
             "color": "#1da1f2"
           }
         },

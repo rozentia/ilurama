@@ -1,8 +1,15 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app'
 import {
   getAuth,
   onAuthStateChanged,
-} from "firebase/auth";
+} from 'firebase/auth'
+import {
+  getFunctions,
+} from 'firebase/functions'
+import {
+  initializeAppCheck,
+  ReCaptchaV3Provider,
+} from 'firebase/app-check'
 
 const firebaseConfig = {
   apiKey: process.env.GATSBY_FIREBASE_API_KEY,
@@ -16,11 +23,22 @@ const firebaseConfig = {
 };
 
 let app
+let appCheck
 let auth
+let functions
 
-if (typeof window !== "undefined") {
-  app = app || initializeApp(firebaseConfig);
-  auth = getAuth(app);
+if (typeof window !== 'undefined') {
+  app = app || initializeApp(firebaseConfig)
+  appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider(process.env.GATSBY_RECAPTCHA_SITE_KEY),
+    isTokenAutoRefreshEnabled: true
+  })
+  auth = getAuth(app)
+  functions = getFunctions(app)
 }
 
-export { auth, onAuthStateChanged };
+export {
+  auth,
+  functions,
+  onAuthStateChanged,
+}

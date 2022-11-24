@@ -74,8 +74,8 @@ class OnboardView extends StatelessWidget {
                       curve: Curves.fastLinearToSlowEaseIn,
                       builder: (context, value, _) {
                         final double opacityValue = (value * -1).mapToRange(-30, 0, 0.0, 1.0);
-                        final double logoPadding = value.mapToRange(0, 30, 200, 250);
-                        final double sloganPadding = (value * -1).mapToRange(-30, 0, 40, 70);
+                        final double logoPadding = value.mapToRange(0, 30, 130, 250);
+                        final double sloganPadding = (value * -1).mapToRange(-30, 0, 20, 70);
                         return Opacity(
                           opacity: opacityValue,
                           child: Stack(
@@ -84,7 +84,7 @@ class OnboardView extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.only(bottom: logoPadding),
                                 child: SvgPicture.string(
-                                  logoSVG,
+                                  iluramaLogoType,
                                   color: Colors.white,
                                   alignment: Alignment.bottomCenter,
                                 ),
@@ -403,7 +403,7 @@ class OnboardSocialSignIn extends StatelessWidget {
                           dimension: 40,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: SvgPicture.string(googleLogoSvg, color: Colors.white),
+                            child: SvgPicture.string(googleiluramaLogoType, color: Colors.white),
                           ),
                         ),
                       ],

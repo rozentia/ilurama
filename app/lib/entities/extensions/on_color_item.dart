@@ -8,13 +8,16 @@ extension ExtendedColorItemList on List<ColorItem> {
   List<ColorItem> applyLibraryFilter(LibraryFilterSettings settings) =>
       //= Filter by search term
       where(
-        (colorItem) => settings.searchTerm != null
-            ? settings.searchTerm!.isNotEmpty
-                ? colorItem.name.toLowerCase().contains(settings.searchTerm!.toLowerCase()) ||
-                    colorItem.description.fold<bool>(() => false,
-                        (description) => description.toLowerCase().contains(settings.searchTerm!.toLowerCase()))
-                : true
-            : true,
+        (colorItem) {
+          final term = settings.searchTerm;
+          if (term == null || term.isEmpty == true) return true;
+          return [
+            colorItem.name.toLowerCase(),
+            colorItem.description.fold(() => '', (d) => d.toLowerCase()),
+            colorItem.itemCode,
+            colorItem.key,
+          ].join('\n').contains(term.toLowerCase());
+        },
       )
           //= Filter by brand
           .where(

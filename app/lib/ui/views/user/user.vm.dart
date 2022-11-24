@@ -74,7 +74,6 @@ class UserViewModel extends ReactiveViewModel {
   Future<void> checkEmailVerified(Timer timer) async {
     if (_authService.currentFirebaseUser == null) return;
     await _authService.currentFirebaseUser!.reload();
-    print('tick! current fb user: ${_authService.currentFirebaseUser}');
     if (_authService.currentFirebaseUser?.emailVerified == true) {
       timer.cancel();
       notifyListeners();
@@ -89,6 +88,10 @@ class UserViewModel extends ReactiveViewModel {
       //LOOSERROR - unlogged
       return false;
     }
+  }
+
+  Future<bool> requestAccountDeletion() async {
+    return true;
   }
 
   @override

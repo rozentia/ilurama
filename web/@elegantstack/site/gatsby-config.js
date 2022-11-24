@@ -1,4 +1,5 @@
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })
+const fontFile = require('./src/@elegantstack/solid-ui-theme/typography-fonts.json')
 
 module.exports = {
   flags: {
@@ -8,11 +9,21 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-use-query-params`,
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     google: {
+    //       families: ['Droid Sans', 'Droid Serif']
+    //     }
+    //   }
+    // },
     {
       resolve: '@elegantstack/gatsby-theme-flexiblocks',
       options: {
         createDemoPages: false,
-        colorMode: false
+        colorMode: false,
+        fonts: fontFile.fonts,
       },
     },
     {
@@ -24,9 +35,20 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: process.env.GATSBY_FIREBASE_MEASUREMENT_ID,
+          cookieName: "gatsby-gdpr-google-analytics",
+          anonymize: true, // https://github.com/andrezimpel/gatsby-plugin-gdpr-cookies#anonymize
+          allowAdFeatures: false,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: process.env.GATSBY_GOOGLETAGMANAGER_ID,
+        id: process.env.GATSBY_FIREBASE_MEASUREMENT_ID,
         includeInDevelopment: false,
   
         // datalayer to be set before GTM is loaded
@@ -54,6 +76,7 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
+    siteUrl: `https://ilurama.com`,
     //General Site Metadata
     title: 'ilurama',
     name: 'ilurama',

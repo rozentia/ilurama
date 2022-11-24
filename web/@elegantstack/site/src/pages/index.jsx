@@ -25,6 +25,7 @@ import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
 import theme from './_theme'
 import styles from './_styles'
+import CookieConsent from 'react-cookie-consent'
 
 const IndexPage = props => {
   const { allBlockContent } = props.data

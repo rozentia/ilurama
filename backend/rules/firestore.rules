@@ -1,8 +1,49 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /{document=**} {
+    
+    //@ Returns true if auth uid equals [stringInput]
+    function authUidEquals(stringInput) {
+      return (request.auth.uid == stringInput);
+    }
+
+    //- Glarehub User
+    match /user/{userId} {
+      // * User can only be read or written by its owner and request cannot modify
+      //   readOnly field
+      // * Can only be deleted by admin
+      allow read: if authUidEquals(userId);
+      allow create: if authUidEquals(userId);
+      allow update: if authUidEquals(userId);
+    }
+    match /user/{userId}/customMatches/{document=**} {
+      // * User can only be read or written by its owner and request cannot modify
+      //   readOnly field
+      // * Can only be deleted by admin
+      allow read: if authUidEquals(userId);
+      allow create: if authUidEquals(userId);
+      allow update: if authUidEquals(userId);
+    }
+
+    //- Distributor
+    match /distributor/{document=**} {
+      // * Distributor can only be written by admin
       allow read, write: if false;
+    }
+
+    //- Scene
+    match /scene/{document=**} {
+      allow read, write: if true;
+    }
+
+    //- Collection
+    match /collection/{document=**} {
+      allow read, write: if true;
+    }
+
+    //- Color Code
+    match /colorcode/{document=**} {
+      allow read, write: if true;
     }
   }
 }

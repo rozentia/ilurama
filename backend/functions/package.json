@@ -8,23 +8,20 @@
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-
+    "update:functions:config": "firebase functions:config:set env=\"$(cat env.json)\"",
+    "view:functions:config": "firebase functions:config:get",
     "deploy:functions:prod": "firebase deploy --only functions -P default",
     "deploy:functions:staging": "firebase deploy --only functions -P staging",
-
     "deploy:rules:staging": "firebase deploy --only firestore:rules -P staging",
     "deploy:rules:prod": "firebase deploy --only firestore:rules -P default",
-
     "deploy:storage:staging": "firebase deploy --only storage -P staging",
     "deploy:storage:prod": "firebase deploy --only storage -P default",
-    
     "deploy:hosting:main": "firebase deploy --only hosting:main -P default",
     "deploy:hosting:api": "firebase deploy --only hosting:api -P default",
     "deploy:hosting:webapp": "firebase deploy --only hosting:webapp -P default",
     "deploy:preview:main": "firebase hosting:channel:deploy main-preview --only main -P default",
     "deploy:preview:api": "firebase hosting:channel:deploy auth-preview --only api -P default",
     "deploy:preview:webapp": "firebase hosting:channel:deploy webapp-preview --only webapp -P default",
-    
     "logs": "firebase functions:log"
   },
   "engines": {
@@ -32,16 +29,22 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0"
+    "firebase-functions": "^4.1.0",
+    "form-data": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun.js": "^8.0.6"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.4",
     "firebase-functions-test": "^0.2.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.5.4"
   },
   "private": true

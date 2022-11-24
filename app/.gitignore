@@ -56,3 +56,5 @@ wiredash_env.dart
 
 # Android Playstore upload keys
 key.properties
+
+secrets.dart

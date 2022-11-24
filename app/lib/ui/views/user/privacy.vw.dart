@@ -21,3 +21,22 @@ class PrivacyPolicyView extends StatelessWidget {
     );
   }
 }
+
+class TermsOfServiceView extends StatelessWidget {
+  const TermsOfServiceView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(15, 25, 15, 100),
+        child: FutureBuilder<String>(
+          future: rootBundle.loadString('assets/docs/terms.md').catchError((e) => 'Privacy Policy'),
+          builder: (context, snapshot) => snapshot.hasData
+              ? Markdown(data: snapshot.data ?? 'Privacy Policy')
+              : const CupertinoActivityIndicator(radius: 48),
+        ),
+      ),
+    );
+  }
+}

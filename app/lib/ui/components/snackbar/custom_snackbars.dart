@@ -121,7 +121,7 @@ class _CustomSnackBarState extends State<CustomSnackBar> {
               child: SizedBox(
                   height: 95,
                   child: SvgPicture.string(
-                    glarehubLogoFeature,
+                    iluramaLogoIcon,
                     color: widget.backgroundColor.withOpacity(0.05),
                     fit: BoxFit.fitHeight,
                   )),

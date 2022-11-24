@@ -77,9 +77,6 @@ class ContentService with ReactiveServiceMixin implements ContentServiceInterfac
   @override
   List<ColorCode> get allUserColorCodes => _rUserColorCodes.value;
 
-  ///@ Query subscription for user's color code items
-  // StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _userColorCodeSubscription;
-
   @override
   List<ColorItem> get displayableColorItems => [
         ..._libraryService.products.map((p) => ColorItem.fromProduct(p)),

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'thriftitalic';
+    src: url('/fonts/thrift-italic.woff2') format('woff2'),
+         url('/fonts/thrift-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'thriftregular';
+    src: url('/fonts/thrift-regular.woff2') format('woff2'),
+         url('/fonts/thrift-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

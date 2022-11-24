@@ -40,7 +40,7 @@ class EmailSignInView extends StatelessWidget {
                       color: IluramaColors.canvasColor.dark,
                       child: Opacity(
                           opacity: 0.5,
-                          child: SvgPicture.string(glarehubLogoFeature,
+                          child: SvgPicture.string(iluramaLogoIcon,
                               color: secondaryColor(context), fit: BoxFit.fitHeight)),
                     ),
                   ),
