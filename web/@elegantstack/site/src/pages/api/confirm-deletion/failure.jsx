@@ -9,18 +9,11 @@ import ModalWithTabs from '@solid-ui-blocks/Modal/Block01'
 import Header from '@solid-ui-blocks/Header/Block01'
 import Footer from '@solid-ui-blocks/Footer/Block01'
 import { normalizeBlockContentNodes } from '@blocks-helpers'
-import { useLocation } from '@reach/router';
-import queryString from 'query-string';
 import theme from '../../_theme'
 
 const IndexPage = props => {
   const { allBlockContent } = props.data
   const content = normalizeBlockContentNodes(allBlockContent?.nodes)
-
-  const location = useLocation()
-  const query = location.search
-  const params = queryString.parse(query == undefined ? '' : query)
-  const token = params.token
 
   return (
     <Layout theme={theme} {...props}>

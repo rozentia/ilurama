@@ -19,6 +19,13 @@ module.exports = {
     //   }
     // },
     {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+      }
+    },
+    {
       resolve: '@elegantstack/gatsby-theme-flexiblocks',
       options: {
         createDemoPages: false,
@@ -29,8 +36,11 @@ module.exports = {
     {
       resolve: '@elegantstack/gatsby-theme-flexiblog-news',
       options: {
-        // Add theme options here. Check documentation for available options.
-        siteUrl: 'https://ilurama.com', // process.env.URL || process.env.VERCEL_URL
+        sources: {
+          contentful: true,
+          local: false,
+        },
+        siteUrl: 'https://ilurama.com',
         basePath: '/content',
       }
     },
@@ -120,36 +130,44 @@ module.exports = {
     //Footer Menu Items (2 Sets)
     footerMenu: [
       {
-        title: 'Quick Links',
+        title: 'Links',
         items: [
           {
-            name: 'Advertise with us',
-            slug: '/contact'
+            name: 'Home',
+            slug: '/'
           },
           {
-            name: 'About Us',
+            name: 'About',
             slug: '/about'
           },
           {
-            name: 'Contact Us',
-            slug: '/contact'
+            name: 'Blog',
+            slug: '/content'
+          },
+          {
+            name: 'App',
+            slug: '/app'
+          },
+          {
+            name: 'Support',
+            slug: '/support'
           }
         ]
       },
       {
-        title: 'Legal Stuff',
+        title: 'Legal',
         items: [
           {
             name: 'Privacy Notice',
-            slug: '/'
+            slug: '/legal/privacy'
           },
           {
             name: 'Cookie Policy',
-            slug: '/'
+            slug: '/legal/cookies'
           },
           {
             name: 'Terms Of Use',
-            slug: '/'
+            slug: '/legal/terms'
           }
         ]
       }

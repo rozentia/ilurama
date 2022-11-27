@@ -1,7 +1,6 @@
 import bg_lines_1 from '../../assets/app/bg_lines_1.png'
 import bg_lines_2 from '../../assets/app/bg_lines_2.png'
 import bg_lines_3 from '../../assets/app/bg_lines_3.png'
-import bg_lines_4 from '../../assets/app/bg_lines_4.png'
 import bg_lines_5 from '../../assets/app/bg_lines_5.png'
 import bg_lines_5_cut_sm from '../../assets/app/bg_lines_5_cut_sm.png'
 import bg_lines_6_cut from '../../assets/app/bg_lines_6_cut.png'

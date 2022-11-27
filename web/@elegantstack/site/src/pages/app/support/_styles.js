@@ -1,7 +1,7 @@
 
 import sprinkle from '../../../assets/app/support/sprinkle-pattern.svg'
 
-export default {
+const styles = {
   heroContainer: {
     position: `relative`,
     pt: [6, 7],
@@ -32,3 +32,5 @@ export default {
     px: [3, 4]
   }
 }
+
+export default styles

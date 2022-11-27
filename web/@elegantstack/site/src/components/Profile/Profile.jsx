@@ -15,7 +15,12 @@ const Profile = () => {
         This is a client-only route. You could set up a form to save information
         about a user here.
       </p>
-      <span onClick={() => signOut(auth)}>Sign Out</span>
+      <span
+        role='button'
+        tabIndex={0}
+        onClick={() => signOut(auth)}
+        onKeyUp={console.log('unimplemented')}
+        >Sign Out</span>
     </div>
   )
 }

@@ -18,4 +18,6 @@ export const fnApi = () => fn
     })
     .https
 
+export const { logger } = functions
+
 export * as params from './params'

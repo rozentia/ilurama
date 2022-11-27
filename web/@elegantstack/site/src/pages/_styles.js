@@ -7,7 +7,7 @@
 
  import circle from '../assets/home/circle.png'
 
- export default {
+const styles = {
    heroContainer: {
      position: `relative`,
      pt: 5,
@@ -94,4 +94,6 @@
      }
    }
  }
+ 
+ export default styles
  

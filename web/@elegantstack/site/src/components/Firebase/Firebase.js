@@ -40,5 +40,6 @@ if (typeof window !== 'undefined') {
 export {
   auth,
   functions,
+  appCheck,
   onAuthStateChanged,
 }

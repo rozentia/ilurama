@@ -13,5 +13,7 @@
 	</array>
 	<key>com.apple.developer.authentication-services.autofill-credential-provider</key>
 	<true/>
+	<key>com.apple.developer.devicecheck.appattest-environment</key>
+	<string>development</string>
 </dict>
 </plist>

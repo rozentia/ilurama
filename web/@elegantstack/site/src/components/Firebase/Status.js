@@ -4,7 +4,7 @@ import { useAuthValue } from "./AuthProvider";
 import { signOut } from "firebase/auth";
 import { auth } from "./Firebase";
 
-export default () => {
+const GetStatus = () => {
 
   const { currentUser } = useAuthValue();
 
@@ -38,3 +38,5 @@ export default () => {
 
   return <div>{details}</div>
 }
+
+export default GetStatus

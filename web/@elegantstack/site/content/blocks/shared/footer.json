@@ -28,7 +28,7 @@
         {
           "text": "Blog",
           "type": "PAGE",
-          "link": "advertisement",
+          "link": "/content",
           "variant": "links.nav-light"
         },
         {

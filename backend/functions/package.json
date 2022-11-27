@@ -29,6 +29,7 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "contentful": "^9.2.13",
     "cors": "^2.8.5",
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^4.1.0",

@@ -7,11 +7,12 @@
  *
  */
 
- export default {
+const theme = {
     colors: {
       background: `#FCFCFF`,
       headerBg: `transparent`,
       footerBg: `#F6F7FA`
     }
   }
-  
+
+ export default theme

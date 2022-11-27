@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'theme-ui'
-import SVG from 'react-inlinesvg'
-import MisfitcodersSVG from '../../assets/shared/misfitcoders-logo.svg'
+import Svg from 'react-inlinesvg'
+import MisfitcodersSvg from '../../assets/shared/misfitcoders-logo.svg'
 
 const styles = {
   link: {
@@ -31,7 +31,7 @@ const PoweredByMisfitcoders = () => (
     sx={styles.link}
   >
     Powered By Misfitcoders
-    {MisfitcodersSVG && <SVG src={MisfitcodersSVG} />}
+    {MisfitcodersSvg && <Svg src={MisfitcodersSvg} />}
   </Link>
 )
 

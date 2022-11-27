@@ -11,6 +11,9 @@
 		"deploy": "firebase deploy --only hosting:main -P default",
 		"preview": "firebase hosting:channel:deploy main-preview --only main -P default"
 	},
+	"resolutions": {
+		"source-map": "^0.8.0-beta.0"
+	},
 	"dependencies": {
 		"@elegantstack/gatsby-theme-flexiblocks": "*",
 		"@elegantstack/gatsby-theme-flexiblog-news": "*",
@@ -26,12 +29,14 @@
 		"gatsby-plugin-sharp": "^4.24.0",
 		"gatsby-plugin-use-query-params": "^1.0.1",
 		"gatsby-plugin-web-font-loader": "^1.0.4",
+		"gatsby-source-contentful": "7.4.0",
 		"gatsby-transformer-sharp": "^4.24.0",
 		"query-string": "^7.1.1",
 		"react": "^18.1.0",
 		"react-cookie-consent": "^8.0.1",
 		"react-dom": "^18.1.0",
 		"react-router-dom": "^6.4.3",
+		"source-map": "^0.8.0-beta.0",
 		"use-query-params": "^2.1.2"
 	},
 	"devDependencies": {
