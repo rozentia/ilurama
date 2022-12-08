@@ -1,0 +1,30 @@
+{
+  "name": "ilurama-library",
+  "version": "0.0.1",
+  "description": "Ilurama product library",
+  "main": "dist/index.js",
+  "author": "Enrique Velasco",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon -L -e ts --exec \"npm run build && npm start\"",
+    "db:start": "docker run -d --name ilurama-postgres -e POSTGRES_PASSWORD=Pass1981! -v $(pwd)/data/:/var/lib/postgresql/data -p 5432:5432 postgres",
+    "db:studio": "npx prisma studio"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@types/pg": "^8.6.5",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "pg": "^8.8.0"
+  },
+  "prisma": {
+    "schema": "./prisma/schema.prisma"
+  }
+}
