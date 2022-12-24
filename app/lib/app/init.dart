@@ -1,3 +1,4 @@
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flamingo/flamingo.dart';
 import 'package:flutter/foundation.dart';
@@ -20,6 +21,9 @@ Future<bool> initializeApp(String env) async {
       Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform),
       initializeDatabase(),
     ]);
+    await FirebaseAppCheck.instance.activate(
+    webRecaptchaSiteKey: 'recaptcha-v3-site-key',
+  );
     if (!kReleaseMode) {
       //= Inititalize DEBUG ONLY elements
       final firebaseDebugApp = await Firebase.initializeApp(

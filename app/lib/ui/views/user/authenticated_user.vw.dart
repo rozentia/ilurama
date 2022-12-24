@@ -18,6 +18,9 @@ class AuthenticatedUserView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!model.currentUserHasEmailVerified) {
+      model.runVerification();
+    }
     return IluramaFrostedScaffold(
       appBarForegroundAlwaysVisible: true,
       appBarLeading: IconButton(
@@ -101,11 +104,40 @@ class AuthenticatedUserView extends StatelessWidget {
                   resendEmailActivation: model.resendEmailActivation,
                 )
               else
-                const SizedBox(height: 100),
+                Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        UserContentDetailBox(model.currentUserCollections.length.toString(), 'collections'),
+                        UserContentDetailBox(model.currentUserColorCodes.length.toString(), 'color codes'),
+                        UserContentDetailBox(model.currentUserScenes.length.toString(), 'scenes'),
+                      ],
+                    )),
             ],
           ),
         ),
       ],
+    );
+  }
+}
+
+class UserContentDetailBox extends StatelessWidget {
+  final String data;
+  final String label;
+  const UserContentDetailBox(this.data, this.label, {Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Column(
+        children: [
+          data.asHeadline3(context),
+          const SizedBox(height: 10),
+          label.toUpperCase().asCaption(context),
+        ],
+      ),
     );
   }
 }

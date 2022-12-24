@@ -51,7 +51,7 @@ Future<void> main() async {
         await initializeApp(environment);
 
         // TODO enable/disable crashlytics
-        // FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+        FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
 
         runApp(
           RootRestorationScope(
@@ -75,7 +75,7 @@ Future<void> main() async {
     (e, s) {
       log.severe(e);
       // TODO enable/disable crashlytics
-      // FirebaseCrashlytics.instance.recordError(e, s, fatal: true);
+      FirebaseCrashlytics.instance.recordError(e, s, fatal: true);
     },
   );
 }

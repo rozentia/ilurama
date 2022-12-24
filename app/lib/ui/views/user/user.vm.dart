@@ -39,6 +39,8 @@ class UserViewModel extends ReactiveViewModel {
       );
   Option<String> get currentUserDisplayName => optionOf(_authService.currentFirebaseUser?.displayName);
   List<Collection> get currentUserCollections => _contentService.allUserCollections;
+  List<ColorCode> get currentUserColorCodes => _contentService.allUserColorCodes;
+  List<Scene> get currentUserScenes => _contentService.allUserScenes;
 
   Future<void> startSocialSignIn(AuthType authType) => runBusyFuture(_handleSignIn(authType));
 

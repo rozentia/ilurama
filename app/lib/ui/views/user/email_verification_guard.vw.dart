@@ -3,10 +3,7 @@ import 'dart:async';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:ilurama_theme/ilurama_theme.dart';
-import 'package:stacked/stacked.dart';
 
-import '../../../app/locator/locator.dart';
-import '../../../services/auth/auth.dart';
 import '../../components/components.dart';
 import '../../widgets/widgets.dart';
 
@@ -50,6 +47,7 @@ class EmailVerificationGuard extends StatelessWidget {
               isBusy: value,
               onPressed: () {
                 isBusy.value = true;
+
                 resendEmailActivation().then(
                   (result) {
                     isBusy.value = false;
@@ -69,25 +67,5 @@ class EmailVerificationGuard extends StatelessWidget {
         ],
       ),
     );
-  }
-}
-
-class EmailVerificationGuardModalViewModel extends BaseViewModel {
-  final AuthServiceInterface _authService;
-
-  EmailVerificationGuardModalViewModel({AuthServiceInterface? authService})
-      : _authService = authService ?? getIt<AuthServiceInterface>();
-
-  String get currentlyLoggedInUserEmail => _authService.currentFirebaseUser?.email ?? '';
-  bool get isEmailVerified => _authService.currentFirebaseUser?.emailVerified == true;
-
-  Future<bool> resendEmailActivation() async {
-    try {
-      _authService.resendEmailVerification();
-      return true;
-    } catch (e) {
-      //LOOSERROR - unhandled
-      return false;
-    }
   }
 }

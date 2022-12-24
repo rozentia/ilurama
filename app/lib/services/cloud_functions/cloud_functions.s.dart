@@ -12,10 +12,9 @@ class CloudFunctionsService {
       final userUid = getIt<AuthServiceInterface>().currentFirebaseUser?.uid;
       if (userUid == null) throw Exception('User either not authenticated or not found');
       final response = await functions.httpsCallable('app-reqdel').call(userUid);
-      print(response.data);
     } catch (e) {
       //LOOSERROR -
-      print(e);
+      rethrow;
     }
   }
 }
